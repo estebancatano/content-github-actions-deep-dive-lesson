@@ -47,7 +47,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Create a release
+      - name: Create a release.
         uses: actions/upload-artifact@v2
         with:
           name: zipped-bundle
