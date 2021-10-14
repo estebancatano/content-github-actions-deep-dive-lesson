@@ -46,6 +46,7 @@ jobs:
           path: ${{ github.sha }}.zip
   publish:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Create a release.
         uses: actions/upload-artifact@v2
